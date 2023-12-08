@@ -14,7 +14,7 @@ array<int, 2> HumanPlayer::nextTurn(array<array<int, 3>, 3> board) const {
     row = getIntInput();
     cout << "Enter the column number of your next move: ";
     col = getIntInput();
-    if (row < 0 || row > 2 || col < 0 || col > 2) cout << "Invalid row or col val! Please input value between 0 and 2!" << endl;
+    if (row < 0 || row > 2 || col < 0 || col > 2) cout << "Please input value between 0 and 2!" << endl;
     else if (board[row][col] != -1) cout << "That point is already occupied!" << endl;
     else break;
   }

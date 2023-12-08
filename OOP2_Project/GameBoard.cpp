@@ -76,10 +76,10 @@ GameBoard::GameBoard() {
       << "0 - Human Player\n" << "1 - Random AI\n";
 
   while (1) {
-    cout << "Please select player 1: ";
+    cout << "Choose Player 1 (symbol X): ";
     playerType = getIntInput();
     if (playerType != 0 && playerType != 1){
-      cout << "Please input 0 or 1!" << endl;
+      cout << "Input number must be 0 or 1!" << endl;
       continue;
     }
     if (playerType == 0){
@@ -90,10 +90,10 @@ GameBoard::GameBoard() {
       static RandomAI player1(playerType);
       p1 = &player1;
     }
-    cout << "Please select player 2: ";
+    cout << "Choose Player 2 (symbol O): ";
     playerType = getIntInput();
     if (playerType != 0 && playerType != 1){
-      cout << "Please input 0 or 1!" << endl;
+      cout << "Input number must be 0 or 1!" << endl;
       continue;
     }
     if (playerType == 0){
